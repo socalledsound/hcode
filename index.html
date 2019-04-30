@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="aframe-extras.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        
+          <a-assets>
+<!--
+    <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+    <img id="skyTexture"
+      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+-->
+  </a-assets>
+<!--        <a-entity id="box" geometry="primitive: box" material="color: red"></a-entity>-->
+<!--
+          <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+ <a-sky src="#skyTexture"></a-sky>
+-->
+        
+<!--<a-grid></a-grid>-->
+
+<a-ocean color="#d5b4ea" width="400" depth="400" density="400" opacity="1" position="0 0 0"  material="shader: flat; src: images.jpg"></a-ocean>
+
+<!--
+<a-entity geometry="primitive: plane"
+          material="shader: ocean; color: blue; wave-height: 10"></a-entity>        
+-->
+        
+<!--<a-tube path="5 0 5, 5 0 -5, -5 0 -5" radius="0.5" material="shader: flat; src: bark-image.jpg"></a-tube>-->
+
+<!-- Generate a hexmap here: http://vonwolfehaus.github.io/von-grid/editor/ -->
+<!--
+<a-hexgrid src="hexmap.json"
+           material="color: #47BF92"></a-hexgrid>
+-->
+        
+<!--
+        <a-entity geometry="primitive: cylinder"
+          material="src: bark-image.jpg; color: #696969; roughness: 1; metalness: 0">
+</a-entity>
+-->
+        <a-entity geometry="primitive: plane" material="shader: flat; src: images.jpg"></a-entity>
+    </a-scene>
+  </body>
+</html>
